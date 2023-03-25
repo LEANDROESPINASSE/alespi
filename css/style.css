@@ -1,9 +1,44 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
+
+ .btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:rgb(255, 255, 255);
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  color: white;
+  transform: translateY(-8px);
+  background-color: #1fa851;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-wsp{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+}
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,700|Source+Sans+Pro:400,600");
@@ -61,18 +96,19 @@ a:focus, a:hover {
 }
 
 .btn-main {
-  background: #28ABE3;
-  border: 1px solid #28ABE3;
+  background: #004AAD;
+  border: 1px solid #656565;
   color: #fff;
   display: inline-block;
   font-size: 14px;
   letter-spacing: 1px;
   padding: 12px 40px;
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 4px;
 }
 .btn-main:hover {
-  color: #fff;
+  background-color: #0058cb;
+  color: white;
 }
 
 .btn-transparent {
@@ -267,7 +303,7 @@ a:focus, a:hover {
 }
 
 .bg-gray {
-  background: #f9f9f9;
+  background: #EBEBEB;
 }
 
 .header-bradcrumb {
@@ -375,10 +411,11 @@ a:focus, a:hover {
 
 .logo {
   display: inline-block;
+  width: 40px;
 }
 
 .single-page-header {
-  background-image: url("../images/about/about-header.jpg");
+  background-image: url("../images/slider/BACK.jpg");
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -386,7 +423,7 @@ a:focus, a:hover {
   position: relative;
 }
 .single-page-header:before {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   content: "";
   top: 0;
@@ -403,6 +440,7 @@ a:focus, a:hover {
 }
 .navigation .logo-default {
   display: none;
+  width: 40%;
 }
 .navigation .dropdown-toggle::before, .navigation .dropdown-toggle::after {
   display: none;
@@ -414,7 +452,7 @@ a:focus, a:hover {
 }
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 26px;
   padding: 20px 15px;
   text-transform: uppercase;
@@ -423,7 +461,9 @@ a:focus, a:hover {
 }
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: none;
-  color: #28ABE3;
+  transform: translateY(-8px);
+  font-size: 21px;
+  color: #006eff;
 }
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: #28ABE3;
@@ -838,10 +878,12 @@ a:focus, a:hover {
  Call To Action 1
 ==================================================================*/
 .call-to-action {
-  padding: 100px 0;
-  background: url("../images/call-to-action/call-to-action-bg-2.jpg");
+  background: url("../images/call-to-action/OF1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  background-attachment: fixed;
+  color: #fdfdfd;
+  text-shadow: 0 1px 6px #000000
 }
 .call-to-action h2 {
   line-height: 1.5;
@@ -858,7 +900,7 @@ a:focus, a:hover {
 ==================================================================*/
 .call-to-action-2 {
   padding: 100px 0;
-  background-image: url("../images/call-to-action/call-to-action-bg.jpg");
+  background-image: url("../images/call-to-action/OF.jpg");
   background-size: cover;
   color: #fff;
 }
@@ -907,6 +949,11 @@ a:focus, a:hover {
   color: #fff;
   border-radius: 0;
 }
+
+.contact-form #contact-submit:hover {
+background-color: #006eff;
+}
+
 .contact-form textarea.form-control {
   padding: 10px;
   height: 120px !important;
@@ -936,7 +983,7 @@ a:focus, a:hover {
   text-align: center;
 }
 .social-icon ul li a:hover {
-  background: #28ABE3;
+  background: #006EFF;
   color: #fff;
   border: 1px solid #28ABE3;
 }
@@ -957,6 +1004,7 @@ a:focus, a:hover {
 .google-map .map_canvas {
   height: 400px;
   color: white;
+
 }
 
 /*=================================================================
@@ -1182,9 +1230,12 @@ a:focus, a:hover {
 .service-2 .service-item {
   border: 1px solid #eee;
   margin-bottom: 30px;
-  padding: 50px 20px;
+  padding: 25px 20px;
   transition: all 0.3s ease 0s;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 3%;
 }
+
 .service-2 .service-item:hover {
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
@@ -1286,7 +1337,7 @@ a:focus, a:hover {
 .team {
   padding: 100px 0;
   padding-bottom: 70px;
-  background: #F6F6F6;
+  background: #EBEBEB;
 }
 .team .team-member {
   background: #fff;
@@ -1414,7 +1465,7 @@ a:focus, a:hover {
 .blog {
   padding-bottom: 60px;
   padding-top: 80px;
-  background: #F6F6F6;
+  background: #ffffff;
 }
 
 .posts {
@@ -1424,6 +1475,7 @@ a:focus, a:hover {
 .post-item {
   background: #fff;
   margin-bottom: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 .post-item .content {
   padding: 20px;
@@ -1436,8 +1488,8 @@ a:focus, a:hover {
   margin: 10px 0;
 }
 .post-item .content .btn-main {
-  padding: 12px 25px;
-  margin: 15px 0;
+  padding: 12px 10px;
+  margin: 10px 0;
 }
 
 /* 8.2.1 Blog Details */
@@ -1646,6 +1698,132 @@ a:focus, a:hover {
 /*=================================================================
   Single Blog Page
 ==================================================================*/
+
+/*=================================================================
+  Contact
+  ==================================================================*/
+  .contact-form {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    .contact-form {
+      margin-top: 20px;
+    }
+  }
+  
+  /* background-color: transparent; */
+  
+  
+  .contact-form .form-control {
+    
+    border: 1px solid #dedede;
+    box-shadow: none;
+    height: 45px !important;
+    color: #0c0c0c;
+    height: 38px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  .contact-form input:hover,
+  .contact-form textarea:hover,
+  .contact-form #contact-submit:hover {
+    border-color: #0058CB;
+  }
+  .contact-form #contact-submit {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    margin: 0;
+    background: #0058CB;
+    color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+
+  .contact-form textarea.form-control {
+    padding: 10px;
+    height: 120px !important;
+    outline: none;
+  }
+  
+  .contact-details .contact-short-info {
+    margin-top: 15px;
+  }
+  .contact-details .contact-short-info li {
+    margin-bottom: 6px;
+  }
+  
+  .social-icon li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .social-icon li a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #4268ff;
+  }
+
+  .social-icon li a:hover {
+    transform: translateY(-8px);
+    color: #0033ff;
+  }
+
+
+  .social-icon li a i {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0;
+  }
+  
+  .error {
+    padding: 10px;
+    color: #D8000C;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: #FFBABA;
+  }
+  
+  .success {
+    background-color: #6cb670;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  #error, #success {
+    display: none;
+    margin-bottom: 10px;
+  }
+  
+  .map {
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+  .map #map {
+    height: 400px;
+    color: white;
+  }
+  
+  .contact-meta-block {
+    margin-top: 30px;
+    padding: 40px 0;
+    min-height: 250px;
+    text-align: center;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+  .contact-meta-block > i {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }  
 #blog-banner {
   padding-bottom: 100px;
   padding-top: 150px;
