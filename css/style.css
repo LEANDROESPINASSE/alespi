@@ -479,7 +479,7 @@ a:focus, a:hover {
 }
 .navigation .dropdown-submenu .dropdown-menu {
   margin: 0;
-  background-color: #131313;
+  background-color: #004AAD;
 }
 @media (min-width: 992px) {
   .navigation .dropdown-submenu .dropdown-menu {
@@ -493,7 +493,7 @@ a:focus, a:hover {
     top: -5px;
   }
   .navigation .dropdown-submenu .dropdown-menu {
-    background-color: #000;
+    background-color: #004AAD;
   }
 }
 .navigation .dropdown:hover > .dropdown-menu {
@@ -509,7 +509,7 @@ a:focus, a:hover {
   visibility: hidden;
   opacity: 0;
   padding: 0;
-  background: #000;
+  background: #004AAD;
   transition: 0.3s ease;
 }
 .navigation .dropdown-menu li:first-child {
